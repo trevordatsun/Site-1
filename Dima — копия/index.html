@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+    <title>Dima</title>
+  </head>
+  <body>
+    <div class="whrapper">
+      <aside>
+        <img src="./images/profile_picture.jpg" alt="DIMASS" />
+
+        <div class="aside-box">
+          <div class="buttons-top">
+            <button class="btn1">
+              <a
+                href="https://t.me/dimonchello56"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                🍻 Позвать пить
+              </a>
+            </button>
+            <button class="btn2">Обидеться на отказ</button>
+          </div>
+          <div class="friends">
+            <h2>Мои друзья <span class="cost">6</span></h2>
+            <button class="fri-ic" data-link="https://t.me/Wavepma">
+              <img src="./images/friend-1.jpg" alt="f1" /></button
+            ><button class="fri-ic" data-link="https://t.me/ulililiii">
+              <img src="./images/friend-2.jpg" alt="f2" /></button
+            ><button class="fri-ic" data-link="https://t.me/Lazzy_Kitten">
+              <img src="./images/friend-3.jpg" alt="f3" /></button
+            ><button
+              class="fri-ic"
+              data-link="https://ratings.fide.com/profile/54161770"
+            >
+              <img src="./images/friend-4.jpg" alt="f4" /></button
+            ><button class="fri-ic" data-link="https://t.me/rebrikhachess">
+              <img src="./images/friend-5.jpg" alt="f5" />
+            </button>
+            <button class="fri-ic" data-link="https://t.me/sharknocare">
+              <img src="./images/friend-6.jpg" alt="f6" />
+            </button>
+          </div>
+          <h2>Интересы</h2>
+          <div class="interesy">
+            <p class="itemchik">Сон</p>
+            <p class="itemchik">Секс</p>
+            <p class="itemchik">Каро-канн</p>
+            <p class="itemchik">Шаги</p>
+            <p class="itemchik">Жена</p>
+          </div>
+        </div>
+      </aside>
+      <main>
+        <div class="theme-switcher">
+          <button id="themeToggle">🌙</button>
+        </div>
+        <div class="title-box">
+          <h1>Дмитрий Слизунков</h1>
+          <img src="./images/Check.png" alt="галочка" />
+        </div>
+        <h2>Обо мне</h2>
+        <div class="info-box">
+          <p><b>Возраст:</b> <span>27 лет</span></p>
+          <p><b>SEX:</b> <span>Мужница</span></p>
+          <p><b>Федерация:</b> <span>РОССИЯ</span></p>
+        </div>
+        <h2>Мой хозяин</h2>
+        <div class="info-box">
+          <p><b>Имя:</b> <span>Анатолий Зуйков</span></p>
+          <p><b>R имя:</b> <span>БОГ</span></p>
+          <p>
+            <b>Почта:</b>
+            <a href="mailto:hozajnDimana@gmail.com">hozajnDimana@gmail.com</a>
+          </p>
+        </div>
+        <p class="text">
+          Я Дмитрий Слизунков — казахский кандит, алтайский шахматист и человек
+          с добрым сердцем. Сила и ум помогают мне защищать родных и бороться за
+          справедливость. В жизни ценю честность, дружбу и гармонию.
+          <strong>Люблю своего хозяина</strong>
+        </p>
+        <h2>Любимая еда</h2>
+        <div>
+          <ul>
+            <li>чечевица с абсентом</li>
+            <li>Пиво</li>
+            <li>Абсент без чечевицы</li>
+          </ul>
+        </div>
+        <h2>Особые навыки</h2>
+        <ol>
+          <li class="list-item">
+            Меломан
+            <ul class="inner-list">
+              <li>
+                В плейлисте имеются треки, что вызывают ушное кровотечение
+              </li>
+              <li>В 2016 исполнил кавер на 'БЛЯ ФЭЙС'</li>
+            </ul>
+          </li>
+          <li class="list-item">
+            Шахматист
+            <ul class="inner-list">
+              <li>В рот ебал шахматы, после каждого 2 поражения</li>
+              <li>Еще пару партий и спать...</li>
+            </ul>
+          </li>
+        </ol>
+        <h2>Важно!!!</h2>
+        <p>Девушку не ищу, есть жена. <span>Идите нахуй!</span></p>
+        <p class="last_word">Лондон - дебют для пидоров.</p>
+      </main>
+    </div>
+
+    <div id="offenseModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Я обиделся! 😠</h2>
+        <p>Вы действительно отказались пить со мной? Это очень грустно...</p>
+        <div class="offense-options">
+          <button id="apologizeBtn">Извиниться</button>
+          <button id="doubleOffenseBtn">Обидеться еще сильнее</button>
+        </div>
+        <div id="apologyResponse" style="display: none; margin-top: 15px">
+          <p>
+            Ладно, я вас прощаю. Но в следующий раз обязательно присоединяйтесь!
+            🍻
+          </p>
+        </div>
+        <div id="doubleOffenseResponse" style="display: none; margin-top: 15px">
+          <p>ВСЕ, ТЕПЕРЬ Я ВАС НЕНАВИЖУ! 💢<br />Иду жаловаться Анатолию...</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="friendsModal" class="modal">
+      <div class="modal-content friends-modal">
+        <span class="close friends-close">&times;</span>
+
+        <div class="friends-header">
+          <h2>Мои друзья</h2>
+          <div class="friends-count">6 друзей</div>
+        </div>
+
+        <div class="friends-grid">
+          <div class="friend-item">
+            <div class="friend-photo">
+              <img
+                src="./images/friend-1.jpg"
+                alt="Друг 1"
+                class="friend-img"
+              />
+              <div class="friend-number"></div>
+            </div>
+            <div class="friend-info">
+              <h3>Артурчик Выходной</h3>
+              <p>
+                Пьет строго по выходным. В пятницу уже с утра ищет компанию.
+                Говорит: "Я не алкоголик, я специалист по выходным!"
+              </p>
+            </div>
+          </div>
+
+          <div class="friend-item">
+            <div class="friend-photo">
+              <img
+                src="./images/friend-2.jpg"
+                alt="Друг 2"
+                class="friend-img"
+              />
+              <div class="friend-number"></div>
+            </div>
+            <div class="friend-info">
+              <h3>Сломленный Хозяин</h3>
+              <p>
+                Хозяин всех и вся. Решает, кто сегодня пьет, а кто нет. Его
+                слово - закон. Всегда знает, где найти лучший абсент.
+              </p>
+            </div>
+          </div>
+
+          <div class="friend-item">
+            <div class="friend-photo">
+              <img
+                src="./images/friend-3.jpg"
+                alt="Друг 3"
+                class="friend-img"
+              />
+              <div class="friend-number"></div>
+            </div>
+            <div class="friend-info">
+              <h3>Ростислав Неприкасаемый Чемпион</h3>
+              <p>
+                Выигрывает все этапы, потому что с ним никто не хочет играть.
+                Его шахматная стратегия: "Напугать до победы".
+              </p>
+            </div>
+          </div>
+
+          <div class="friend-item">
+            <div class="friend-photo">
+              <img
+                src="./images/friend-4.jpg"
+                alt="Друг 4"
+                class="friend-img"
+              />
+              <div class="friend-number"></div>
+            </div>
+            <div class="friend-info">
+              <h3><b>АБ</b></h3>
+              <p>
+                Тренер с уникальной методикой: "Делай как я, но лучше не делай".
+                Специалист по проигрышам и оправданиям.
+              </p>
+            </div>
+          </div>
+
+          <div class="friend-item">
+            <div class="friend-photo">
+              <img
+                src="./images/friend-5.jpg"
+                alt="Друг 5"
+                class="friend-img"
+              />
+              <div class="friend-number"></div>
+            </div>
+            <div class="friend-info">
+              <h3>Александр Направо</h3>
+              <p>
+                Ходит только налево. Говорит, что право - для слабаков. В
+                лабиринте бы пропал, но пиво всегда находит.
+              </p>
+            </div>
+          </div>
+
+          <div class="friend-item">
+            <div class="friend-photo">
+              <img
+                src="./images/friend-6.jpg"
+                alt="Друг 6"
+                class="friend-img"
+              />
+              <div class="friend-number"></div>
+            </div>
+            <div class="friend-info">
+              <h3>Саня Небоскреб</h3>
+              <p>
+                Высокий как жердь. В дверях пригибается, в баре достает до
+                верхней полки. Мечтает найти стул своего размера.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
